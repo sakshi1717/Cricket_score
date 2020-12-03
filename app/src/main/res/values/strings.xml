@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Cricket App</string>
+    <string name="team1">Team1</string>>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="logout" />
+    <string name="back" />
+    <string name="email_hint" />
+    <string name="get_password_link" />
+    <string name="password_hint" />
+    <string name="login_btn" />
+    <string name="signup_btn" />
+    <string name="signup">SIGNUP</string>
+    <string name="password" />
+    <string name="title_activity_maps">Map</string>
+    <string name="player_error">Error initializing YouTube player: %s</string>
+    <string name="seek_to">Jump To</string>
+    <string name="seek_to_hint">Seconds</string>
+</resources>

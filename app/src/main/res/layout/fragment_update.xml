@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="0.5"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/holo_blue_light">
+
+
+    <ImageView
+        android:id="@+id/ivProfilePic"
+        android:layout_width="match_parent"
+        android:layout_height="235dp"
+
+        android:gravity="center_horizontal"
+        app:srcCompat="@drawable/ic_launcher_foreground"
+        tools:ignore="VectorDrawableCompat" />
+    <EditText
+        android:layout_width="300dp"
+        android:id="@+id/update_name"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/ivProfilePic"/>
+
+    <EditText
+        android:id="@+id/update_age"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/update_name"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="62dp"
+        android:hint="Age"
+        android:inputType="number" />
+    <EditText
+    android:id="@+id/update_email"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/update_age"
+    android:layout_centerVertical="true"
+    android:layout_centerInParent="true"
+    android:layout_marginTop="62dp"
+    android:hint="Email"
+    android:inputType="textEmailAddress" />
+    
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="62dp"
+        android:onClick="sendNotification"
+        android:layout_below="@+id/update_email"/>
+
+
+</RelativeLayout>

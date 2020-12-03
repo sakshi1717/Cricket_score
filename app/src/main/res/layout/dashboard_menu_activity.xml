@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/cardview_light_background"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".dashboard">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/relay_schedule"
+                    android:layout_weight="0.65"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:background="#f15050"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+
+                        <ImageView
+                            android:id="@+id/calendar"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/past_winners"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerInside"
+                            android:padding="8dp"
+                            android:layout_centerHorizontal="true"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Standings"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="14sp"
+                            android:layout_below="@+id/calendar"/>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/relay_winners"
+                    android:layout_weight="0.55"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:background="#EED45A"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+
+                        <ImageView
+                            android:id="@+id/favts"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/ic_favorite_black_40dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerInside"
+                            android:padding="8dp"
+                            android:layout_centerHorizontal="true"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Favorites"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="14sp"
+                            android:layout_below="@+id/favts"/>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="15dp"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/relay_ranking"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.45"
+                    android:background="#48DFE1"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+
+                        <ImageView
+                            android:id="@+id/ICCRanking"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerHorizontal="true"
+                            android:adjustViewBounds="true"
+                            android:padding="8dp"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/iccranking" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/ICCRanking"
+                            android:layout_centerHorizontal="true"
+                            android:text="ODI Rankings"
+                            android:textSize="14sp" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/relay_batrankings"
+                    android:layout_weight="0"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:background="#d4bb46"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+
+                        <ImageView
+                            android:id="@+id/park_maps"
+                            android:layout_width="1200dp"
+                            android:layout_height="120dp"
+                            android:src="@drawable/ic_map_black_100dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerInside"
+                            android:padding="8dp"
+                            android:layout_centerHorizontal="true"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Find Nearby Places"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="20sp"
+                            android:layout_below="@+id/park_maps"/>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="15dp"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/relay_trivia"
+                    android:layout_weight="0.75"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:background="#BCE24A"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+
+                        <ImageView
+                            android:id="@+id/trivia"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/trivia"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerInside"
+                            android:padding="8dp"
+                            android:layout_centerHorizontal="true"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Daily Trivia"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="14sp"
+                            android:layout_below="@+id/trivia"/>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/relay_Gallery"
+                    android:layout_weight="0.65"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:background="#d4bb"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+
+                        <ImageView
+                            android:id="@+id/video"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/ic_ondemand_video_black_24dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerInside"
+                            android:padding="8dp"
+                            android:layout_centerHorizontal="true"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Watch Tutorial"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="14sp"
+                            android:layout_below="@+id/video"/>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_height="50dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/relay_schedule2"
+            android:layout_weight="0.33"
+            android:foreground="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:background="#4075a2"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@+id/home_btn"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_home_black_24dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:padding="8dp"
+                    android:layout_centerHorizontal="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Home"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="14sp"
+                    android:layout_below="@+id/home_btn"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/relay_winners2"
+            android:layout_weight="0.33"
+            android:foreground="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:background="#4075a2"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@+id/dash_menu"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_dashboard_black_24dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:padding="8dp"
+                    android:layout_centerHorizontal="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Season's Winners"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="14sp"
+                    android:layout_below="@+id/dash_menu"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/relay_winners3"
+            android:layout_weight="0.34"
+            android:foreground="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:background="#4075a2"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@+id/prof_disp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_profile_black_24dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:padding="8dp"
+                    android:layout_centerHorizontal="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Season's Winners"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="14sp"
+                    android:layout_below="@+id/prof_disp"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

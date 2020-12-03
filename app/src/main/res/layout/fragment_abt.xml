@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_green_light">
+
+
+    <TableRow>
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:textSize="20sp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="220dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Cricket Score Application"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    </TableRow>
+
+
+    <TableRow>
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="50dp"
+            android:fontFamily="serif-monospace"
+            android:text="Developed By:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textSize="25sp" />
+
+    </TableRow>
+
+    <TableRow>
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="serif-monospace"
+            android:text="Prableen Singh"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textSize="25sp" />
+
+    </TableRow>
+
+
+    <TableRow>
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="50dp"
+            android:fontFamily="casual"
+            android:text="Using Android Studio IDE"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textSize="20sp" />
+
+    </TableRow>
+
+
+</TableLayout>

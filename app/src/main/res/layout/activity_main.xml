@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+
+   <androidx.drawerlayout.widget.DrawerLayout
+       android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id = "@+id/drawer_layout"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity"
+    tools:openDrawer="start">
+
+
+   <androidx.recyclerview.widget.RecyclerView
+       android:id="@+id/recyclerview"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+   </androidx.recyclerview.widget.RecyclerView>
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       tools:context=".MainActivity">
+
+      <androidx.appcompat.widget.Toolbar
+          android:layout_width="match_parent"
+          android:layout_height="?attr/actionBarSize"
+          android:background="@color/colorPrimary"
+         android:id="@+id/toolbar"
+         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+         android:elevation="4dp"/>
+
+      <FrameLayout
+          android:id="@+id/fragment_container"
+          android:layout_width="match_parent"
+          android:layout_height="632dp">
+
+
+      </FrameLayout>
+
+
+   </LinearLayout>
+
+   <com.google.android.material.navigation.NavigationView
+       android:layout_width="wrap_content"
+       android:layout_height="match_parent"
+       android:layout_gravity = "start"
+       android:id="@+id/nav_view"
+       app:headerLayout="@layout/nav_header"
+       app:menu="@menu/drawer_menu"/>
+
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
+
+
+</LinearLayout>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_weight="1"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintLeft_toLeftOf="parent"
+       app:layout_constraintRight_toRightOf="parent"
+       android:layout_height="50dp">
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:id="@+id/relay_schedule"
+          android:layout_weight="0.33"
+          android:foreground="?attr/selectableItemBackground"
+          android:clickable="true"
+          android:background="#4075a2"
+          android:layout_height="match_parent">
+
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/home_btn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_home_black_24dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                android:padding="8dp"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:layout_centerHorizontal="true"
+                android:textSize="14sp"
+                android:layout_below="@+id/home_btn"/>
+
+         </RelativeLayout>
+
+      </RelativeLayout>
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:id="@+id/relay_winners"
+          android:layout_weight="0.33"
+          android:foreground="?attr/selectableItemBackground"
+          android:clickable="true"
+          android:background="#4075a2"
+          android:layout_height="match_parent">
+
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/dash_menu"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_dashboard_black_24dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                android:padding="8dp"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Season's Winners"
+                android:layout_centerHorizontal="true"
+                android:textSize="14sp"
+                android:layout_below="@+id/dash_menu"/>
+
+         </RelativeLayout>
+
+      </RelativeLayout>
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:id="@+id/relay_winners3"
+          android:layout_weight="0.34"
+          android:foreground="?attr/selectableItemBackground"
+          android:clickable="true"
+          android:background="#4075a2"
+          android:layout_height="match_parent">
+
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/prof_disp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_profile_black_24dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                android:padding="8dp"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Season's Winners"
+                android:layout_centerHorizontal="true"
+                android:textSize="14sp"
+                android:layout_below="@+id/prof_disp"/>
+
+         </RelativeLayout>
+
+      </RelativeLayout>
+
+   </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

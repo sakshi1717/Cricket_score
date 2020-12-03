@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="matchTypeTv" type="id" />
+    <item name="date2Tv" type="id" />
+    <item name="matchStatusTv" type="id" />
+    <item name="dateTv" type="id" />
+</resources>
